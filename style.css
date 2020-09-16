@@ -1,0 +1,48 @@
+#textbord{animation-name: blur; animation-duration: 2s;}
+#mainbord{animation-name: gc; animation-duration: 0.2s;}
+
+@keyframes blur {
+  from { filter:blur(5px); transform:perspective(1000px)  rotateX(0deg) rotateY(500deg) scale3d(0, 0, 1); }
+  to { filter:blur(0px); transform:perspective(1000px)  rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);}
+}
+
+@keyframes gc {
+  0% { background:black;}
+    100% { background: linear-gradient(45deg, black 0px, #53e0da 50%, black 100%);}
+
+}
+#mainbord{ left:0; top:0; position:absolute; height:100%; width:100%;
+
+ background-image: linear-gradient(45deg, black 0px, #53e0da 50%, black 100%);
+ 
+ }
+
+#textbord{
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position:78% 50%; 
+  background-size: 320px auto;
+  background-image:url("ok3.png");
+    /* padding: 54px; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 80% 50%;
+    background-size: 320px auto;
+    background-image: url(ok3.png);
+    cursor: pointer;
+    opacity: 0.8;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0px 0.5px 5px 1px black;
+    text-align: left;
+    position: absolute;
+    left: 15%;
+    top: 15%;
+    color: white;
+    font-size: 20px;
+    min-height: 400px;
+    width: 70%;
+    font-family: system-ui;
+    will-change: transform;
+    transform:perspective(1000px)  rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);
+}
